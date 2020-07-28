@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, KeyboardShortcutsModule.forRoot()],
+  imports: [BrowserModule.withServerTransition({ appId: 'serverApp' }), KeyboardShortcutsModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })
